@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <title>Invoice</title>
+ 
+</head>
+
+<body>
+  <main>
+    <h1>Запропонувати роботу</h1>
+    <h3>Контактні дані</h3>
+    <table border="1" cellspacing="0" cellpadding="10px">
+    <tr>
+      <th>Телефон</th>
+      <td>+380939414145</td>
+    </tr>
+    <tr>
+      <th>Skype</th>
+      <td>dimamyrt</td>
+    </tr>  
+    <tr>
+      <th>Місто</th>
+      <td>Одеса</td>
+    </tr>
+    </table>
+    <form action="/forms.html" method="get">
+          <br />
+          <fieldset>
+            <legend>Зворотній зв'язок</legend>
+
+            <label>
+              Ваш e-mail:
+              <input 
+                type="email" 
+                required
+                minlength="6"
+                name="e-mail" />
+            </label>
+      
+            <br />
+      
+            <label>
+              Опис:<br/>
+              <textarea rows="5" cols="50"></textarea> 
+            </label>
+           <br/>
+            <label>
+              Тип роботи
+              <select required name="Type of work">
+                <option value="office_w">Робота в офісі</option>
+                <option value="remote_w" selected>Віддалена робота</option>
+                <option value="project_w">Разовий проєкт</option>
+              </select>
+            </label>
+      
+           <br />
+           <br />
+      
+           <input type="submit" value="Найняти мене" />
+          </fieldset>
+      
+        </form>
+  </main>    
+</body>
+</html>
