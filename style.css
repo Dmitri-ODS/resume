@@ -1,0 +1,52 @@
+.text {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #333
+}
+
+.position {
+    font-weight: bold;
+}
+
+.name {
+    font-style: italic;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.title {
+    text-transform:uppercase;
+}
+
+.link {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #005;
+}
+
+.list {
+    list-style-type:square;
+}
+
+/* колір всього тексту на сторінці має бути #333;
+шрифт має бути без засічок (Arial, Helvetica, sans-serif);
+
+текст з позицією має бути жирний засобами CSS;
+
+імʼя має бути нахиленим;
+
+заголовки в таблиці мають бути написаними великими літерами;
+
+посилання мають мати колір #00f та бути підкресленими;
+
+відвідані посилання мають мати колір #005 та мають бути підкресленими;
+
+при наведенні на посилання підкреслення має пропасти;
+
+в списку з вміннями показники мають бути квадратними. */
