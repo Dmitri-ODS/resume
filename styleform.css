@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+*{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+input, 
+select, 
+textarea {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input {
+  background-color: #F8FAFC;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  width: 436px;
+  height: 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #3B4256;
+}
+
+input[type="submit"] {
+    background-color: #0048D9;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 16px;
+    height: 32px;
+    font-size: 16px;
+    padding-left: 8rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #002266;
+}
+
+input::placeholder {
+  color: #B8BCCA;
+  font-size: 16px;
+  
+}
+option {
+  color: #B8BCCA;
+  font-size: 16px;
+  
+}
+
+textarea::placeholder {
+  color: #B8BCCA;
+  font-size: 16px;
+}
+
+textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 12px;
+  width: 436px;
+  height: 163px;
+  background-color: #F8FAFC;
+  border-radius: 4px;
+  color: #3B4256;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+label {
+  color: #6F7482;
+}
+
+.label-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+}
+
+input:invalid {
+  border: 1px solid #ED0131;
+  border-radius: 4px;
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.email:invalid + p {
+  display: block;
+}
+
+select {
+  width: 460px;
+  background: url('./mdi_arrow_drop_down.png') no-repeat center right 0rem, #F8FAFC;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  
+  
+  height: 48px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #3B4256;
+  
+  padding: 0.6rem;
+}
+
+form {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+table {
+  border: 1px dashed #7B61FF;
+  border-radius: 5px;
+}
+
+td {
+  background-color: yellow;
+}
+
+th {
+  background-color: #0048D9;
+}
