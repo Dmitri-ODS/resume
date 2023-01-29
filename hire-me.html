@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./styleform.css">
+</head>
+
+<body>
+  <main>
+    <h1>Запропонувати роботу</h1>
+    <h3>Контактні дані</h3>
+    <table border="1" cellspacing="0" cellpadding="10px">
+    <tr>
+      <th>Телефон</th>
+      <td>+380939414145</td>
+    </tr>
+    <tr>
+      <th>Skype</th>
+      <td>dimamyrt</td>
+    </tr>  
+    <tr>
+      <th>Місто</th>
+      <td>Одеса</td>
+    </tr>
+    </table>
+    <form action="/forms.html" method="get">
+          <br />
+          <fieldset>
+            <legend>Зворотній зв'язок</legend>
+            <div class="label-row">
+            <label class="required" for="e-mail">
+              Ваш e-mail:
+            </label>
+              <input
+                id="email"
+                class="email"
+                type="email" 
+                required
+                name="email"
+                placeholder="Введіть електронну пошту"
+                oninvalid="this.setCustomValidity('Enter Your Email Here')"
+                oninput="this.setCustomValidity('')"
+               />
+               <p class="error">email treba</p>
+              </div>
+              
+      
+            <br />
+      
+            <label>
+              Опис:<br/>
+              <textarea 
+                rows="5" 
+                cols="50"
+                placeholder="Додати коментар"></textarea> 
+            </label>
+           <br/>
+           <div class="label-row">
+            <label for="type-work">
+              Тип роботи
+            </label>
+              <select required name="type-work" id="type-work">
+                <option value="office_w">Робота в офісі</option>
+                <option value="remote_w" selected>Віддалена робота</option>
+                <option value="project_w">Разовий проєкт</option>
+              </select>
+            
+           </div>
+           <br />
+           <br />
+           <input type="submit" value="Найняти мене" />
+          </fieldset>
+             
+        </form>
+  </main>    
+</body>
+</html>

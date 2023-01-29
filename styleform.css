@@ -26,16 +26,19 @@ input {
   font-size: 16px;
   border-radius: 4px;
   color: #3B4256;
+  margin:0;
 }
 
 input[type="submit"] {
     background-color: #0048D9;
     color: #fff;
     border-radius: 6px;
-    padding: 4px 16px;
+    padding: 5px 16px;
     height: 32px;
     font-size: 16px;
-    padding-left: 8rem;
+    padding-left: 8.5rem;
+    margin-right: 0px;
+    width:100%;
 }
 
 input[type="submit"]:hover {
@@ -123,7 +126,10 @@ select {
 
 form {
   max-width: 1024px;
-  margin: 0px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 table {
