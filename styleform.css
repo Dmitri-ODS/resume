@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
+body {
+  width: 1024px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hire-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  border-radius: 12px;
+  border: 1px solid #F2ECFF;
+  box-shadow: 0px 2px 4px rgba(0, 72, 217, 0.1), 0px 24px 60px rgba(0, 72, 217, 0.05), 0px 12px 24px rgba(0, 72, 217, 0.05);
+}
+
+
 *{
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -27,18 +47,8 @@ input {
   border-radius: 4px;
   color: #3B4256;
   margin:0;
-}
-
-input[type="submit"] {
-    background-color: #0048D9;
-    color: #fff;
-    border-radius: 6px;
-    padding: 5px 16px;
-    height: 32px;
-    font-size: 16px;
-    padding-left: 8.5rem;
-    margin-right: 0px;
-    width:100%;
+  border: 1px solid #ED0131;
+  border-radius: 4px;
 }
 
 input[type="submit"]:hover {
@@ -72,6 +82,7 @@ textarea {
   background-color: #F8FAFC;
   border-radius: 4px;
   color: #3B4256;
+  border: 1px;
 }
 
 .required:after {
@@ -91,12 +102,18 @@ label {
   gap: 2px;
 }
 
-input: {
-  border: 1px solid #ED0131;
+input:valid {
+  border: 1px solid #1b8f41;
   border-radius: 4px;
 }
 
-input:valid
+input:focus {
+  outline: none;
+}
+
+textarea:focus, select:focus {
+  outline: 1px solid #0048D9;
+}
 
 .error {
   display: none;
@@ -126,13 +143,27 @@ select {
   padding: 0.6rem;
 }
 
-form {
+input[type="submit"] {
+  background-color: #0048D9;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 16px;
+  height: 32px;
+  font-size: 16px;
+  padding-left: 8.5rem;
+  margin-right: 0px;
+  width:100%;
+  border: 0;
+}
+
+
+/* form {
   max-width: 1024px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
+} */
 
 table {
   border: 1px dashed #7B61FF;
@@ -140,9 +171,9 @@ table {
 }
 
 td {
-  background-color: yellow;
+  background-color: white;
 }
 
 th {
-  background-color: #0048D9;
+  background-color: #F8FAFC;
 }
