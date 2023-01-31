@@ -6,20 +6,26 @@
 
 .wrapper {
     display: flex;
+    height: 100%;
 }
 
+
 .column-left {
-    float: left;
-    width: 35%;
-    padding: 0px;
-    background-color: #86A3B4;
     
-}
+    width: 15%;
+    padding: 0px;
+    margin-left: 20px;
+    background-color: #86A3B4;
+    position: sticky;
+    top: 0px;
+    position: -webkit-sticky;
+    height: 700px;
+  }
 
 
 .column-right {
-    float: left;
-    width: 65%;
+    
+    width: 25%;
     padding-left: 55px;
     padding-top: 0px;
 }
@@ -132,7 +138,7 @@ ul {
     color: #263036;
   }
 
-  .left-info {
+  /* .left-info {
     position: sticky;
     top: 0px;
-  }
+  } */

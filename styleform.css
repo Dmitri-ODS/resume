@@ -91,10 +91,12 @@ label {
   gap: 2px;
 }
 
-input:invalid {
+input: {
   border: 1px solid #ED0131;
   border-radius: 4px;
 }
+
+input:valid
 
 .error {
   display: none;
