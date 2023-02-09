@@ -1,0 +1,22 @@
+.my-theme {
+    --main-text-color :#FF9770;
+    --left-column-background: #FFD670;
+    --black-text-color: #FF70A6;
+    --blue-text-color: #70D6FF;
+    --white-text-color: #E9FF70;
+    --right-column-background: #FF9770;
+
+    --wrapper-padding-left: 20rem;
+    --padding-top: 9px;
+    --left-column-padding-top: 58px;
+    --left-column-padding-left: 40px;
+    --left-column-padding-right: 55px;
+    --left-column-padding-subsection: 36px;
+    --left-column-section-padding-top: 36px;
+    --left-column-sectionitem-padding-bottom: 36px;
+    --left-column-sectionitem-padding-top: 11px;
+    --left-column-title-padding-bottom: 5px;
+    --right-column-padding-left: 55px;
+    --right-column-padding-subsection: 49px;
+    --right-column-title-padding-bottom: 28px;
+  }
