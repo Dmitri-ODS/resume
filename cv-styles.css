@@ -29,6 +29,7 @@
 
 .wrapper {
     display: flex;
+    flex-direction: row;
     height: 1667px;
     padding-left: var(--wrapper-padding-left);
 }
@@ -172,3 +173,22 @@ ul {
     position: sticky;
     top: 0px;
   } */
+
+  @media screen and (max-width: 481px) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+    }
+    .column-left {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+    .column-right {
+      width: 100%;
+      padding: 0;
+    }
+  }
