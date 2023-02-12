@@ -4,11 +4,6 @@ body {
   width: 1024px;
 }
 
-.hire-me {
-  display: flex;
-
-}
-
 fieldset {
   border-radius: 12px;
   border: 1px solid #F2ECFF;
@@ -17,6 +12,7 @@ fieldset {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: form-scale 3s, form-opacity 3.5s;
 }
 
 
@@ -176,4 +172,14 @@ td {
 
 th {
   background-color: #F8FAFC;
+}
+
+@keyframes form-scale {
+  0%    {scale: 200%;}
+  100%  {scale: 100%;}
+}
+
+@keyframes form-opacity {
+  0%     {opacity: 0;}
+  100%   {opacity: 1;}
 }

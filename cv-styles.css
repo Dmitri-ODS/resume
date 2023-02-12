@@ -42,6 +42,8 @@
     margin-left: 20px;
     background-color: var(--left-column-background);
     box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+    position:relative;
+    animation: topmove 5s 1;
     /* position: fixed;
     top:0; */
   }
@@ -53,6 +55,8 @@
     padding-left: var(--right-column-padding-left);
     padding-top: var(--padding-top);
     background-color: var(--right-column-backgroundright-column-background);
+    position:relative;
+    animation: topmove 5.5s 1;
 }
 
 .name {
@@ -75,12 +79,16 @@ color:var(--blue-text-color)
 .photo {
     object-fit: cover;
     width:1fr;
+    animation-play-state:paused;
 }
 
 .photo:hover {
-    transform: scale(1.5,1.5) translateX(71px);;
+    /* transform: scale(1.5,1.5) translateX(3.1rem); */
     filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
     position:relative;
+    animation-play-state:running;
+    animation: photomove 5s 1, photomove2 5s 1;
+    animation-fill-mode: forwards;
     z-index: 5;
 }
 
@@ -158,8 +166,10 @@ ul {
 }
 
 .previous-job:hover {
-  opacity: 1;
+  animation: pastjob-opacity 2s;
+  animation-fill-mode: forwards;
 }
+
   .right-bold {
     font-weight: 600;
     font-size: 16px;
@@ -184,6 +194,27 @@ ul {
     font-size: 16px;
     color: var(--main-text-color);
   }
+
+  @keyframes topmove {
+    from {top: 200vh;}
+    to {top: 0;}
+  }
+  
+  @keyframes photomove {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.5);}
+  }
+
+  @keyframes photomove2 {
+    0%    {left: 0}
+    100% {left: 4.65rem}
+  }
+  
+  @keyframes pastjob-opacity {
+    0%    {opacity: 0.7}
+    100%  {opacity: 1}
+  }
+
 
   /* .left-info {
     position: sticky;
