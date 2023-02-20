@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class=".max-w-screen-lg m-4">
+    <p class="text-xl font-semibold">Запропонувати роботу</p>
+    <br>
+    <p class="text-lg font-semibold">Контактні дані</p>
+    <br>
+    <table class="border-separate border border-dashed border-indigo-600 rounded mb-4 mr-0">
+    <tr>
+      <td class="bg-gray-50 p-1 font-semibold text-center">Телефон</th>
+      <td>+380939414145</td>
+    </tr>
+    <tr>
+      <td class="bg-gray-50 p-1 font-semibold text-center">Skype</th>
+      <td>dimamyrt</td>
+    </tr>  
+    <tr>
+      <td class="bg-gray-50 p-1 font-semibold justify-center text-center">Місто</th>
+      <td>Одеса</td>
+    </tr>
+    </table>
+    <form action="/hire-me.html" method="get">
+          <br />
+          <fieldset class="rounded-lg border border-solid border-indigo-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg p-2">
+            <div class="class="flex flex-col items-start gap-2 p-0"">
+            <label class="required text-gray-500" for="e-mail">
+              Ваш e-mail:
+            </label>
+            <span class="absolute top-2 left-23 text-red-500">*</span>
+              <div><input class="w-full bg-gray-50 h-8"
+                id="email"
+                class="email"
+                type="email" 
+                required
+                name="email"
+                placeholder="Введіть електронну пошту"
+                oninvalid="this.setCustomValidity('Enter Your Email Here')"
+                oninput="this.setCustomValidity('')"
+               />
+               </div>
+              
+               <p class="hidden text-red-500 text-sm mt-0">email treba</p>
+              </div>
+              
+      
+            <br />
+      
+            <label class="text-gray-500">
+              Опис:<br/>
+              <textarea class="bg-gray-50"
+                rows="5" 
+                cols="50"
+                placeholder="Додати коментар"></textarea> 
+            </label>
+           <br/>
+           <div class="label-row">
+            <label for="type-work" class="text-gray-500">
+              Тип роботи
+            </label>
+            <div>
+              <select required name="type-work" id="type-work" class="text-gray-500 h-8 w-full text-xs bg-gray-50">
+                <option value="office_w">Робота в офісі</option>
+                <option value="remote_w" selected>Віддалена робота</option>
+                <option value="project_w">Разовий проєкт</option>
+              </select>
+            </div>
+           </div>
+           <br />
+           <br />
+           <div class="flex">
+           <input type="submit" value="Найняти мене" class="bg-blue-700 m-auto text-white pl-2 pr-2 w-full rounded-lg"/>
+           </div></fieldset>
+             
+        </form>
+  </main>    
+</body>
+</html>
